@@ -1,6 +1,6 @@
-function credentials(firstName, lastName) {
+export function credentials(firstName, lastName) {
     const fullName = { firstName, lastName }
     return fullName
 }
 
-console.log(credentials("nome", "cognome"));
+//console.log(credentials("nome", "cognome"));
