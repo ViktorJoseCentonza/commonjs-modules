@@ -10,10 +10,10 @@ const hobbyThree = "thirdHobby"
 
 function fullUserData() {
     const tempFullName = { ...credentials(firstName, lastName) }
-    const tempHobbies = { ...userHobbies(hobbyOne, hobbyTwo, hobbyThree) }
-
     const fullName = Object.values(tempFullName).join(" ")
-    const hobbies = Object.values(tempHobbies).join()
+    const tempHobbies = userHobbies(hobbyOne, hobbyTwo, hobbyThree)
+    const hobbies = tempHobbies.join()
+
     const fullData = { fullName, hobbies }
     return fullData
 }
